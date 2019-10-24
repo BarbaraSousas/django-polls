@@ -1,8 +1,7 @@
 from django.contrib import admin
-
-from django.conf.urls import include, url
+from django.urls import include, path
 
 urlpatterns = [
-    url('polls/', include('polls.urls')),
-    url('admin/', admin.site.urls),
+    path('polls/', include('polls.urls')),
+    path('admin/', admin.site.urls),
 ]
